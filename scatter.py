@@ -10,7 +10,7 @@ from irisClass import Iris
 #   3 is 'Petal width'
 
 # so for example, if parameters = (0, 1)
-#   we compare Sepal length and Sepal width
+#   we compare Sepal length (X Axis) and Sepal width (Y Axis)
 
 def plotScatter(setosas : Iris, versicolors : Iris, virginicas : Iris, parameters : tuple):
 
