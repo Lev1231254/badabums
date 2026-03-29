@@ -4,6 +4,7 @@ import numpy as np
 from irisClass import Iris
 import averages
 import scatter
+import frequencyChart
 
 data_file_name = 'Iris-(1).csv'
 
@@ -31,4 +32,6 @@ virginicas = Iris('Iris-virginicas', virginicas_data)
 
 #averages.plotAverages(setosas, versicolors, virginicas)
 
-scatter.plotScatter(setosas, versicolors, virginicas, (0, 1))
+#scatter.plotScatter(setosas, versicolors, virginicas, (0, 1))
+
+frequencyChart.plotFrequencyChart(setosas, 0)
