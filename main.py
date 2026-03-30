@@ -37,4 +37,7 @@ virginicas = Iris('Iris-virginicas', virginicas_data)
 
 #frequencyChart.plotParametersChart(setosas, 0)
 
-scatter.plotHistogram2D(setosas, (0, 1))
+#scatter.plotHistogram2D(setosas, (0, 1))
+
+
+frequencyChart.plotParameterRelationship(virginicas, (0, 1), 'red')
