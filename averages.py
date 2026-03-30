@@ -11,6 +11,8 @@ def plotAverages(setosas : Iris, versicolors : Iris, virginicas : Iris):
     br2 = [x + barWidth for x in br1]
     br3 = [x + barWidth for x in br2]
 
+
+    # plot
     plt.bar(br1, setosas.averages, color = 'r', width = barWidth,
         edgecolor = 'grey', label = 'Setosas')
     plt.bar(br2, versicolors.averages, color = 'b', width = barWidth,
@@ -19,7 +21,7 @@ def plotAverages(setosas : Iris, versicolors : Iris, virginicas : Iris):
         edgecolor = 'grey', label = 'Virginicas')
 
 
-
+    # decorate
     plt.ylabel('Length/width in cm', fontweight = 'bold')
 
     plt.xticks([x + barWidth for x in range(4)],

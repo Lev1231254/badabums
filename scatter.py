@@ -14,7 +14,7 @@ from irisClass import Iris
 
 def plotScatter(setosas : Iris, versicolors : Iris, virginicas : Iris, parameters : tuple):
 
-    # retrieving data from func-variables
+    # retrieve data from func-variables
     setosasX = [float(row[parameters[0]]) for row in setosas.data]
     setosasY = [float(row[parameters[1]]) for row in setosas.data]
     versicolorsX = [float(row[parameters[0]]) for row in versicolors.data]
@@ -23,7 +23,7 @@ def plotScatter(setosas : Iris, versicolors : Iris, virginicas : Iris, parameter
     virginicasY = [float(row[parameters[1]]) for row in virginicas.data]
 
 
-    # plotting graph
+    # plot
     plt.scatter(setosasX, setosasY, c = 'blue', alpha = 0.3,
                 label = 'Setosas')
     plt.scatter(versicolorsX, versicolorsY, c = 'red', alpha = 0.3,
@@ -32,7 +32,7 @@ def plotScatter(setosas : Iris, versicolors : Iris, virginicas : Iris, parameter
                 label = 'Virginicas')
 
 
-    #decorating
+    #decorate
     attributes = ['Sepal length','Sepal width','Petal length','Petal width']
     title = 'Relationship between ' + attributes[parameters[0]] + ' and ' + attributes[parameters[1]]
 
@@ -42,3 +42,21 @@ def plotScatter(setosas : Iris, versicolors : Iris, virginicas : Iris, parameter
 
     plt.legend()
     plt.show()
+
+
+# the same as the plotScatter(), but using hexbin.
+# though it's works poorly, since we have small dataset
+
+def plotHistogram2D(species : Iris, parameters : tuple):
+
+    # prepare data
+    speciesX = [float(row[parameters[0]]) for row in species.data]
+    speciesY = [float(row[parameters[1]]) for row in species.data]
+
+    # plot
+    plt.hexbin(speciesX, speciesY, gridsize = 30, 
+               cmap = 'Blues', alpha = 1, label = species.species)
+    
+    plt.legend()
+    plt.show()
+

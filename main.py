@@ -25,6 +25,7 @@ with open(data_file_name, 'r') as data:
             virginicas_data.append(row[1:-1])
 
 
+# set up Iris objects
 setosas = Iris('Iris-setosa', setosas_data)
 versicolors = Iris('Iris-versicolor', versicolors_data)
 virginicas = Iris('Iris-virginicas', virginicas_data)
@@ -34,4 +35,6 @@ virginicas = Iris('Iris-virginicas', virginicas_data)
 
 #scatter.plotScatter(setosas, versicolors, virginicas, (0, 1))
 
-frequencyChart.plotFrequencyChart(setosas, 0)
+#frequencyChart.plotParametersChart(setosas, 0)
+
+scatter.plotHistogram2D(setosas, (0, 1))
