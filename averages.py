@@ -20,7 +20,7 @@ def plotAverages(setosas : Iris, versicolors : Iris, virginicas : Iris):
 
 
 
-    plt.ylabel('Length/width in cm', fontweight = 'bold', fontsize = 17)
+    plt.ylabel('Length/width in cm', fontweight = 'bold')
 
     plt.xticks([x + barWidth for x in range(4)],
                ['Sepal length','Sepal width','Petal length','Petal width'])
