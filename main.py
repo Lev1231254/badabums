@@ -31,13 +31,13 @@ versicolors = Iris('Iris-versicolor', versicolors_data)
 virginicas = Iris('Iris-virginicas', virginicas_data)
 
 
-#averages.plotAverages(setosas, versicolors, virginicas)
+averages.plotAverages(setosas, versicolors, virginicas)
 
-#scatter.plotScatter(setosas, versicolors, virginicas, (0, 1))
+scatter.plotScatter(setosas, versicolors, virginicas, (0, 1))
 
-#frequencyChart.plotParametersChart(setosas, 0)
+frequencyChart.plotParametersChart(setosas, 0)
 
-#scatter.plotHistogram2D(setosas, (0, 1))
+scatter.plotHistogram2D(setosas, (0, 1))
 
 
 frequencyChart.plotParameterRelationship(virginicas, (0, 1), 'red')

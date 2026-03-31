@@ -14,7 +14,7 @@ from irisClass import Iris
 
 def plotScatter(setosas : Iris, versicolors : Iris, virginicas : Iris, parameters : tuple):
 
-    # retrieve data from func-variables
+    # prepare data
     setosasX = [float(row[parameters[0]]) for row in setosas.data]
     setosasY = [float(row[parameters[1]]) for row in setosas.data]
     versicolorsX = [float(row[parameters[0]]) for row in versicolors.data]

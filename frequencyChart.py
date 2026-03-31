@@ -30,7 +30,7 @@ def plotParameterRelationship(species : Iris, parameters : tuple, graphColor : s
 
     # plot
     plt.hist(relationships, color = graphColor, edgecolor = 'grey', label = species.species,
-             bins = 10)
+             bins = 12)
 
     # decorate
 
