@@ -1,6 +1,7 @@
 Visualizing iris dataset in various ways. It's a training project
 
 Here you can find following plots:
+    
     1. Comparing parameter averages with bars-plot
 
     2. Density of parameter values with hexbin plot
